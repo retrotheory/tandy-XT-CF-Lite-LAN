@@ -1,0 +1,113 @@
+
+(rules PCB xt-cf-tandy
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 122)
+    (layer_rule Front
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.5)
+    )
+    (layer_rule Back
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+  )
+  (rule
+    (width 200.0)
+    (clear 200.2)
+    (clear 100.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_600:300_um"
+    (shape
+      (circle Front 600.0 0.0 0.0)
+    )
+    (shape
+      (circle Back 600.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_600:300_um" "Via[0-1]_600:300_um" default
+  )
+  (via 
+    "Via[0-1]_600:300_um-kicad_default" "Via[0-1]_600:300_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_600:300_um-Power" "Via[0-1]_600:300_um" Power
+  )
+  (via_rule
+    default "Via[0-1]_600:300_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_600:300_um-kicad_default"
+  )
+  (via_rule
+    Power "Via[0-1]_600:300_um-Power"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer Front Back)
+    )
+  )
+  (class "kicad_default"
+    /A0 /A1 /A10 /A11 /A12 /A13 /A14 /A15
+    /A16 /A17 /A18 /A19 /A2 /A3 /A4 /A5
+    /A6 /A7 /A8 /A9 /AEN "/CF_DMARQ" "/CF_IORDY" /D0
+    /D1 /D2 /D3 /D4 /D5 /D6 /D7 /RDY/~BUSY
+    "/~CF_CS0" "/~CF_CS1" "/~CF_DASP" /~IOR /~IOW /~MEMR /~MEMW /~ROMW
+    "/~ROM_CS" "Net-(D1-Pad2)" "Net-(D1-Pad1)" "Net-(P2-Pad2)" "Net-(P2-Pad1)" "Net-(U3-Pad19)" "Net-(U4-Pad4)" "Net-(U5-Pad11)"
+    "Net-(RN1-Pad2)" "Net-(RN1-Pad3)" "Net-(RN1-Pad1)" "Net-(RN2-Pad2)" "Net-(RN3-Pad2)" "Net-(RN3-Pad3)" "Net-(RN3-Pad1)" "Net-(P1-Pad26)"
+    "Net-(P1-Pad24)" "Net-(P1-Pad25)" "Net-(P1-Pad27)" "Net-(P1-Pad28)" "Net-(P1-Pad29)" "Net-(P1-Pad30)" "Net-(P1-Pad31)" "Net-(P1-Pad33)"
+    "Net-(P1-Pad37)" "Net-(P1-Pad40)" "Net-(P1-Pad46)" "Net-(P1-Pad47)" "Net-(P1-Pad48)" "Net-(P1-Pad49)" "Net-(RN4-Pad4)" "Net-(SW1-Pad3)"
+    "Net-(SW2-Pad1)" "Net-(U1-Pad26)" "Net-(U4-Pad8)" "Net-(U4-Pad11)" "Net-(U5-Pad4)" "Net-(J1-Pad46)" /CLK /IRQ2
+    "Net-(J1-Pad60)" "Net-(J1-Pad4)" /DACK0 "Net-(J1-Pad8)" /DRQ3 /DRQ1 "Net-(J1-Pad1)" "Net-(J1-Pad5)"
+    /IRQ3 "Net-(J1-Pad47)" "Net-(J1-Pad49)" "Net-(J1-Pad55)" "/IO_READY" "Net-(C9-Pad1)" "Net-(C10-Pad1)" /NX1
+    /NX2 "Net-(C13-Pad1)" "Net-(C14-Pad1)" "Net-(J2-PadSH)" "Net-(J2-Pad1)" "Net-(J2-Pad2)" "Net-(J2-Pad3)" "Net-(J2-Pad4)"
+    "Net-(J2-Pad5)" "Net-(J2-Pad6)" "Net-(J2-Pad7)" "Net-(J2-Pad8)" "Net-(J2-Pad10)" "Net-(J2-Pad12)" /TPIN+ "/TPIN-"
+    "Net-(U6-Pad49)" "Net-(U6-Pad48)" "Net-(U6-Pad80)" "Net-(U6-Pad79)" "Net-(U6-Pad88)" "Net-(U6-Pad87)" "Net-(U6-Pad85)" "Net-(U6-Pad95)"
+    "Net-(U6-Pad94)" "Net-(U6-Pad93)" "Net-(U6-Pad92)" "Net-(U6-Pad91)" "Net-(U6-Pad90)" "Net-(U6-Pad100)" "Net-(U6-Pad99)" "Net-(U6-Pad98)"
+    "Net-(U6-Pad97)" /LEDBNC "Net-(U6-Pad78)" "Net-(U6-Pad77)" "Net-(U6-Pad76)" "Net-(U6-Pad75)" "Net-(U6-Pad68)" "Net-(U6-Pad67)"
+    "Net-(U6-Pad66)" "/TPOUT-" "Net-(U6-Pad74)" "Net-(U6-Pad84)" "Net-(U6-Pad56)" "Net-(U6-Pad71)" "Net-(U6-Pad73)" "Net-(U6-Pad82)"
+    "Net-(U6-Pad69)" "Net-(U6-Pad72)" /LED2 "Net-(U6-Pad81)" /LED0 /TPOUT+ "Net-(U6-Pad65)" /LED1
+    "Net-(U6-Pad54)" "Net-(U6-Pad55)" "Net-(U6-Pad53)" /~BRST /IRQ5 /ENABLE /RESET "Net-(R4-Pad1)"
+    /IRQ4 "Net-(U7-Pad7)" "Net-(U7-Pad6)" "Net-(R7-Pad1)" "Net-(RN1-Pad4)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer Front Back)
+    )
+  )
+  (class Power
+    GND VCC
+    (clearance_class Power)
+    (via_rule Power)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer Front Back)
+    )
+  )
+)
