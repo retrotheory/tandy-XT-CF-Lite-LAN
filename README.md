@@ -67,7 +67,7 @@ Due to height restrictions in the Tandy expansion bay, dont use an IC socket for
 
 ---
 
-|| References || Value || Footprint || Quantity Per PCB ||
+| References | Value | Footprint | Quantity Per PCB |
 |---|---|---|---|
 | C1 C2 C3 C4 C5 C6 C15 C16 C17 C18 C19 | 100nF | C_0805_HandSoldering | 11 |
 | C20 | 100nF | C_0805_HandSoldering | 1 |
