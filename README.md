@@ -1,5 +1,10 @@
 Tandy XT-CF-Lite LAN Rev 0.9a ReadMe
 ----------------------------
+This is a Compact Flash HD and Realtek LAN card for the Tandy 1400. It uses the expansion slot on the rear of the Tandy to add a bootable HD. 
+The Realtek 8019AS is an NE2000 compatible. Uses the XT NE2000 packet driver. 
+
+https://www.vcfed.org/forum/forum/genres/pcs-and-clones/41507-ne2000-packet-drivers-for-8-bit-slots
+RSET8019.EXE for DOS, can set EEPROM parameters, also includes diagnostic functions
 
 8-bit TANDY (ISA) CompactFlash interface + Boot ROM + LAN
 
