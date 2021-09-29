@@ -17,6 +17,10 @@ Credit:
 Design uses schematic from Sergey Kiselev, with a few small changes to switches, and PCB from scratch.\
 www.malinov.com/Home/sergeys-projects/xt-cf-lite
 
+
+https://www.lo-tech.co.uk/xt-cf-card-for-tandy-1400-series-laptops/
+James Pearce for showing that this was possible a long long time ago.
+
 XT-IDE Universal BIOS\
 www.xtideuniversalbios.org  
 www.xtideuniversalbios.org/binaries  
