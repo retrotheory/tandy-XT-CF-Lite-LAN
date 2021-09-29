@@ -65,8 +65,10 @@ Due to height restrictions in the Tandy expansion bay, dont use an IC socket for
 
 
 
-|| Component || Description || Part || References || Value || Footprint || Quantity Per PCB ||
-|-|----------|-|-------------|--------|-|----------|-|------|-|----------|-|----------------|-|
+---
+
+| Component | Description | Part | References | Value | Footprint | Quantity Per PCB |
+|---|---|---|---|---|---|---|
 | 1 |  | C-xt-cf-rescue | C1 C2 C3 C4 C5 C6 C15 C16 C17 C18 C19 | 100nF | C_0805_HandSoldering | 11 |
 | 2 | Unpolarized capacitor | C | C20 | 100nF | C_0805_HandSoldering | 1 |
 | 3 |  | CP1-xt-cf-rescue | C7 C8 | 10uF | C_0805_HandSoldering | 2 |
