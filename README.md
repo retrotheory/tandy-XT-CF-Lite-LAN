@@ -65,43 +65,36 @@ Due to height restrictions in the Tandy expansion bay, dont use an IC socket for
 
 
 
-\begin{table}
-\renewcommand{\arraystretch}{1.2}
-\centering
-\begin{tabular}{@{}lllll@{}}
-\toprule
-Part & References & Value & Footprint & Quantity Per PCB \\\midrule
-C-xt-cf-rescue & C1 C2 C3 C4 C5 C6 C15 C16 C17 C18 C19 & 100nF & C\textunderscore0805\textunderscoreHandSoldering & \multicolumn{1}{|r|}{11} \\
-C & C20 & 100nF & C\textunderscore0805\textunderscoreHandSoldering & \multicolumn{1}{|r|}{1} \\
-CP1-xt-cf-rescue & C7 C8 & 10uF & C\textunderscore0805\textunderscoreHandSoldering & \multicolumn{1}{|r|}{2} \\
-C & C21 & 47uF 10V & CP\textunderscoreTantalum\textunderscoreCase-D\textunderscoreEIA-7343-31\textunderscoreHand & \multicolumn{1}{|r|}{1} \\
-C & C9 C10 C11 C12 C13 C14 & C & C\textunderscore0805\textunderscoreHandSoldering & \multicolumn{1}{|r|}{6} \\
-LED & D1 & IDE LED & LED\textunderscoreD3.0mm & \multicolumn{1}{|r|}{1} \\
-RJ45\textunderscoreLED\textunderscoreShielded & J2 & RJ45\textunderscoreLED\textunderscoreShielded & 8P8C\textunderscoreyellow\textunderscoregreen\textunderscoreCkmtw\textunderscoreC133529 & \multicolumn{1}{|r|}{1} \\
-Tandy\textunderscorePCBEdgeBus\textunderscore02x30 & J1 & Tandy\textunderscorePCBEdgeBus\textunderscore02x30 & Connector\textunderscorePCBEdge\textunderscoreTandy1400LT & \multicolumn{1}{|r|}{1} \\
-CF\textunderscoreCARD-xt-cf-rescue & P1 & CF\textunderscoreCARD & CF\textunderscoreSlot\textunderscore3M\textunderscoreN7E50-7516TS0884 & \multicolumn{1}{|r|}{1} \\
-CONN\textunderscore2-xt-cf-rescue & P2 & IDE LED & PinHeader\textunderscore1x02\textunderscoreP2.54mm\textunderscoreHorizontal & \multicolumn{1}{|r|}{1} \\
-R & R3 & 200R & R\textunderscore0805\textunderscoreHandSoldering & \multicolumn{1}{|r|}{1} \\
-R & R5 R6 & 1K & R\textunderscore0805\textunderscoreHandSoldering & \multicolumn{1}{|r|}{2} \\
-R-xt-cf-rescue & R1 & 5.6k & C\textunderscore0805\textunderscore2012Metric\textunderscorePad1.15x1.40mm\textunderscoreHandSolder & \multicolumn{1}{|r|}{1} \\
-R-xt-cf-rescue & R2 & 10K & C\textunderscore0805\textunderscore2012Metric\textunderscorePad1.15x1.40mm\textunderscoreHandSolder & \multicolumn{1}{|r|}{1} \\
-R & R7 & 10K & R\textunderscore0805\textunderscoreHandSoldering & \multicolumn{1}{|r|}{1} \\
-R & R4 & 27k & R\textunderscore0805\textunderscoreHandSoldering & \multicolumn{1}{|r|}{1} \\
-R\textunderscorePack04 & RN1 RN2 RN3 & 10K & R\textunderscoreArray\textunderscoreConvex\textunderscore4x1206 & \multicolumn{1}{|r|}{3} \\
-R\textunderscorePack04 & RN4 & 1K & R\textunderscoreArray\textunderscoreConvex\textunderscore4x1206 & \multicolumn{1}{|r|}{1} \\
-SW\textunderscoreDIP\textunderscorex03 & SW4 & IDE Addr & SW\textunderscoreDIP\textunderscoreSPSTx03\textunderscoreSlide\textunderscore9.78x9.8mm\textunderscoreW7.62mm\textunderscoreP2.54mm & \multicolumn{1}{|r|}{1} \\
-SW\textunderscoreDIP\textunderscorex03 & SW3 & ROM Addr & SW\textunderscoreDIP\textunderscoreSPSTx03\textunderscoreSlide\textunderscore9.78x9.8mm\textunderscoreW7.62mm\textunderscoreP2.54mm & \multicolumn{1}{|r|}{1} \\
-SW\textunderscoreSPDT & SW1 & ROM Enable & CKCOMP-OS102011MA1QN1 & \multicolumn{1}{|r|}{1} \\
-SW\textunderscoreSPDT & SW2 & ROM Write Enable & CKCOMP-OS102011MA1QN1 & \multicolumn{1}{|r|}{1} \\
-13F-39MNL & T1 & 13F-39MNL & SOIC-16W-12\textunderscore7.5x10.3mm\textunderscoreP1.27mm & \multicolumn{1}{|r|}{1} \\
-28C64-xt-cf-rescue & U1 & 28C64 & DIP-28\textunderscoreW15.24mm\textunderscoreSocket & \multicolumn{1}{|r|}{1} \\
-74LS04-xt-cf-rescue & U5 & 74LS04 & SOIC-14\textunderscore3.9x8.7mm\textunderscoreP1.27mm & \multicolumn{1}{|r|}{1} \\
-74LS32-xt-cf-rescue & U4 & 74LS32 & SOIC-14\textunderscore3.9x8.7mm\textunderscoreP1.27mm & \multicolumn{1}{|r|}{1} \\
-74LS688-xt-cf-rescue & U2 U3 & 74LS688 & SOIC-20W\textunderscore7.5x12.8mm\textunderscoreP1.27mm & \multicolumn{1}{|r|}{2} \\
-93CxxA & U7 & 93CxxA & IC\textunderscoreDIP8\textunderscore300 & \multicolumn{1}{|r|}{1} \\
-RTL8019AS & U6 & RTL8019AS & LQFP-14x20mm\textunderscoreP0.5mmRealtek & \multicolumn{1}{|r|}{1} \\
-Crystal & Y2 & 20Mhz Crystal & Resonator-2pin\textunderscorew8.0mm\textunderscoreh3.5mm & \multicolumn{1}{|r|}{1} \\\bottomrule
+|| Component || Description || Part || References || Value || Footprint || Quantity Per PCB ||
+|-|----------|-|-------------|--------|-|----------|-|------|-|----------|-|----------------|-|
+| 1 |  | C-xt-cf-rescue | C1 C2 C3 C4 C5 C6 C15 C16 C17 C18 C19 | 100nF | C_0805_HandSoldering | 11 |
+| 2 | Unpolarized capacitor | C | C20 | 100nF | C_0805_HandSoldering | 1 |
+| 3 |  | CP1-xt-cf-rescue | C7 C8 | 10uF | C_0805_HandSoldering | 2 |
+| 4 | Unpolarized capacitor | C | C21 | 47uF 10V | CP_Tantalum_Case-D_EIA-7343-31_Hand | 1 |
+| 5 | Unpolarized capacitor | C | C9 C10 C11 C12 C13 C14 | C | C_0805_HandSoldering | 6 |
+| 6 | Light emitting diode | LED | D1 | IDE LED | LED_D3.0mm | 1 |
+| 7 |  | RJ45_LED_Shielded | J2 | RJ45_LED_Shielded | 8P8C_yellow_green_Ckmtw_C133529 | 1 |
+| 8 | Generic connector, single row, 01x30, script generated (kicad-library-utils/schlib/autogen/connector/) | Tandy_PCBEdgeBus_02x30 | J1 | Tandy_PCBEdgeBus_02x30 | Connector_PCBEdge_Tandy1400LT | 1 |
+| 9 |  | CF_CARD-xt-cf-rescue | P1 | CF_CARD | CF_Slot_3M_N7E50-7516TS0884 | 1 |
+| 10 |  | CONN_2-xt-cf-rescue | P2 | IDE LED | PinHeader_1x02_P2.54mm_Horizontal | 1 |
+| 11 | Resistor | R | R3 | 200R | R_0805_HandSoldering | 1 |
+| 12 | Resistor | R | R5 R6 | 1K | R_0805_HandSoldering | 2 |
+| 13 |  | R-xt-cf-rescue | R1 | 5.6k | C_0805_2012Metric_Pad1.15x1.40mm_HandSolder | 1 |
+| 14 |  | R-xt-cf-rescue | R2 | 10K | C_0805_2012Metric_Pad1.15x1.40mm_HandSolder | 1 |
+| 15 | Resistor | R | R7 | 10K | R_0805_HandSoldering | 1 |
+| 16 | Resistor | R | R4 | 27k | R_0805_HandSoldering | 1 |
+| 17 | 4 resistor network, parallel topology | R_Pack04 | RN1 RN2 RN3 | 10K | R_Array_Convex_4x1206 | 3 |
+| 18 | 4 resistor network, parallel topology | R_Pack04 | RN4 | 1K | R_Array_Convex_4x1206 | 1 |
+| 19 | 3x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol | SW_DIP_x03 | SW4 | IDE Addr | SW_DIP_SPSTx03_Slide_9.78x9.8mm_W7.62mm_P2.54mm | 1 |
+| 20 | 3x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol | SW_DIP_x03 | SW3 | ROM Addr | SW_DIP_SPSTx03_Slide_9.78x9.8mm_W7.62mm_P2.54mm | 1 |
+| 21 | Switch, single pole double throw | SW_SPDT | SW1 | ROM Enable | CKCOMP-OS102011MA1QN1 | 1 |
+| 22 | Switch, single pole double throw | SW_SPDT | SW2 | ROM Write Enable | CKCOMP-OS102011MA1QN1 | 1 |
+| 23 |  | 13F-39MNL | T1 | 13F-39MNL | SOIC-16W-12_7.5x10.3mm_P1.27mm | 1 |
+| 24 |  | 28C64-xt-cf-rescue | U1 | 28C64 | DIP-28_W15.24mm_Socket | 1 |
+| 25 |  | 74LS04-xt-cf-rescue | U5 | 74LS04 | SOIC-14_3.9x8.7mm_P1.27mm | 1 |
+| 26 |  | 74LS32-xt-cf-rescue | U4 | 74LS32 | SOIC-14_3.9x8.7mm_P1.27mm | 1 |
+| 27 |  | 74LS688-xt-cf-rescue | U2 U3 | 74LS688 | SOIC-20W_7.5x12.8mm_P1.27mm | 2 |
+| 28 | Serial EEPROM, 93 Series, 5.0V, DIP-8/SOIC-8 | 93CxxA | U7 | 93CxxA | IC_DIP8_300 | 1 |
+| 29 |  | RTL8019AS | U6 | RTL8019AS | LQFP-14x20mm_P0.5mmRealtek | 1 |
+| 30 | Two pin crystal | Crystal | Y2 | 20Mhz Crystal | Resonator-2pin_w8.0mm_h3.5mm | 1 |
 
-\end{tabular}
-\caption{xt-cf-tandy_bom_1.01}
-\end{table}
